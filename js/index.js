@@ -7859,17 +7859,7 @@
           }
           makeRoute(t) {
             const {host: e, origin: n} = this.model.route;
-            return (
-              e.indexOf("github.io") > 0
-                ? ((t = t.replace(
-                    n.replace(i.State.deployPath, ""),
-                    n + i.State.deployPath
-                  )),
-                  console.log(t))
-                : (t = n + t),
-              console.log(t, e.indexOf("github.io") > 0),
-              t
-            );
+            return (t = n + t), console.log(t, e.indexOf("github.io") > 0), t;
           }
         };
       },
